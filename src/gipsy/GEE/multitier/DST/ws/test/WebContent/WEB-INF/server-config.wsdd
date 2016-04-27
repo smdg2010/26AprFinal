@@ -34,10 +34,10 @@
  </ns1:service>
  <ns1:service name="WSDSTWrapper" provider="java:RPC" style="wrapped" use="literal">
   <ns2:operation name="getHashTableValue" qname="ns1:getHashTableValue" returnQName="ns1:getHashTableValueReturn" returnType="ns1:WSDemand" soapAction="" xmlns:ns1="http://test" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
-   <ns2:parameter qname="ns1:podSignature" type="ns1:WSDemandSignature"/>
+   <ns2:parameter qname="ns1:podSignature" type="ns1:DemandSignature"/>
   </ns2:operation>
   <ns1:operation name="setHashTable" qname="ns2:setHashTable" returnQName="ns2:setHashTableReturn" returnType="ns2:WSDemandSignature" soapAction="" xmlns:ns2="http://test">
-   <ns1:parameter qname="ns2:poIdObj" type="ns2:WSDemand"/>
+   <ns1:parameter qname="ns2:poIdObj" type="ns2:Demand"/>
   </ns1:operation>
   <ns1:operation name="getPendingDemand" qname="ns3:getPendingDemand" returnQName="ns3:getPendingDemandReturn" returnType="ns3:WSDemand" soapAction="" xmlns:ns3="http://test"/>
   <ns1:parameter name="allowedMethods" value="getPendingDemand getHashTableValue setHashTable"/>

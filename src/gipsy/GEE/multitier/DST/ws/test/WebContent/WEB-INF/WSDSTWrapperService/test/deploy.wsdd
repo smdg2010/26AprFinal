@@ -7,20 +7,20 @@
       <parameter name="wsdlServiceElement" value="WSDSTWrapperService"/>
       <parameter name="schemaQualified" value="http://test"/>
       <parameter name="wsdlServicePort" value="WSDSTWrapper"/>
-      <parameter name="className" value="test.WSDSTWrapper"/>
+      <parameter name="className" value="gipsy.GEE.multitier.DST.ws.WSDSTWrapper"/>
       <parameter name="wsdlPortType" value="WSDSTWrapper"/>
       <parameter name="typeMappingVersion" value="1.2"/>
-      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="getHashTableValue" qname="operNS:getHashTableValue" returnQName="retNS:getHashTableValueReturn" returnType="rtns:WSDemand" soapAction="">
-        <parameter xmlns:pns="http://test" xmlns:tns="http://test" qname="pns:podSignature" type="tns:WSDemandSignature"/>
+      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="getHashTableValue" qname="operNS:getHashTableValue" returnQName="retNS:getHashTableValueReturn" returnType="rtns:Demand" soapAction="">
+        <parameter xmlns:pns="http://test" xmlns:tns="http://test" qname="pns:podSignature" type="tns:DemandSignature"/>
       </operation>
-      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="setHashTable" qname="operNS:setHashTable" returnQName="retNS:setHashTableReturn" returnType="rtns:WSDemandSignature" soapAction="">
-        <parameter xmlns:pns="http://test" xmlns:tns="http://test" qname="pns:poIdObj" type="tns:WSDemand"/>
+      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="setHashTable" qname="operNS:setHashTable" returnQName="retNS:setHashTableReturn" returnType="rtns:DemandSignature" soapAction="">
+        <parameter xmlns:pns="http://test" xmlns:tns="http://test" qname="pns:poIdObj" type="tns:Demand"/>
       </operation>
-      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="getPendingDemand" qname="operNS:getPendingDemand" returnQName="retNS:getPendingDemandReturn" returnType="rtns:WSDemand" soapAction="">
+      <operation xmlns:operNS="http://test" xmlns:retNS="http://test" xmlns:rtns="http://test" name="getPendingDemand" qname="operNS:getPendingDemand" returnQName="retNS:getPendingDemandReturn" returnType="rtns:Demand" soapAction="">
       </operation>
       <parameter name="allowedMethods" value="getPendingDemand getHashTableValue setHashTable"/>
 
-      <typeMapping xmlns:ns="http://test" qname="ns:WSDemandSignature" type="java:test.WSDemandSignature" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
-      <typeMapping xmlns:ns="http://test" qname="ns:WSDemand" type="java:test.WSDemand" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://test" qname="ns:DemandSignature" type="java:test.DemandSignature" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://test" qname="ns:Demand" type="java:test.Demand" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
   </service>
 </deployment>
